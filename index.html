@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>api-checker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+
+    <header class="header">
+      <h1 class="title">API Checker</h1>
+      <p class="subtitle">@api-checker</p>
+      <p class="meta"><span id="tz"></span> • <span id="clock">00:00:00</span></p>
+    </header>
+
+    <section class="section">
+      <h2 class="section-title">Новая проверка</h2>
+      <form id="add-form" class="add-form" autocomplete="off">
+        <span class="prompt">$</span>
+        <input id="url-input" type="text" placeholder="https://api.example.com/health" spellcheck="false" required>
+        <button type="submit" class="btn">добавить</button>
+      </form>
+      <div class="actions">
+        <button id="check-all" class="btn btn-accent">проверить все</button>
+        <span id="stats" class="stats"></span>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title">Эндпоинты</h2>
+      <div id="endpoint-list" class="endpoint-list"></div>
+      <p id="empty" class="empty">пусто — добавьте первый эндпоинт выше</p>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title">Лог</h2>
+      <div id="log" class="log"></div>
+      <p id="log-empty" class="empty">лог пуст</p>
+    </section>
+
+    <footer class="footer">
+      <p>© 2026 api-checker • проверка доступности API из браузера</p>
+    </footer>
+
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

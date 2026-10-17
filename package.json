@@ -1,0 +1,10 @@
+{
+  "name": "api-checker",
+  "version": "1.0.0",
+  "description": "Минималистичный чекер доступности API (статический фронт + Node-бэкенд без зависимостей)",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "license": "MIT"
+}
